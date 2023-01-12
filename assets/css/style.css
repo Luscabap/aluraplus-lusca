@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --cor_font:    #FFFFFF;
+    --cor_fontalt: #C0C0C0;
+    --cor_botao:   #167BF7;
+    --cor_fundo:   #00030C;
+    --cor_borda:   #FFFFFF;
+    --cor_link:    #167BF7;
+
+    --font_principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor_fundo);
+    font-family: var(--font_principal);
+    color: var(--cor_font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container_caixa{
+    margin: 0 6em;
+}
+
+.container_titulo{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--cor_font);
+}
+
+.container_img{
+    margin: 1em 0 2em 0;
+}
+
+.container_botao{
+    background-color: var(--cor_botao);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    margin-bottom: 1em;
+    color: var(--cor_font);
+}
+
+.container_botaoalt{
+    background-color: transparent;
+    border: 2px solid var(--cor_borda);
+    color: var(--cor_font);
+}
+
+.container_aviso{
+    font-size: 12px;
+    color: var(--cor_fontalt);
+}
+
+.secundario_imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao_titulo{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.5em;
+    color: var(--cor_font);
+    margin-bottom: 0.2em;
+}
+
+.descricao_texto{
+    color: var(--cor_fontalt);
+}
+
+.secundario_botao{
+    display: inline-block;
+    margin: 1em 0 0 0;
+}
+
+.container_descricao{
+    padding: 2em;
+}
+
+.dispositivo{
+    color: var(--cor_font);
+    text-align: center;
+}
+
+.dispositivo_titulo{
+    font-size: 48px;
+}
+
+.dispositivo_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* PONTINHO DO LADO DA LISTA */
+    margin: 4em 0;
+}
+
+.lista_item{
+    font-size: 32px;
+}
+
+.rodape{
+    display: grid;
+}
+
+.rodape_img{
+    margin: 8em auto 3em auto;
+}
+
+.rodape_lista{
+    display: flex;
+    justify-content: center;
+}
+
+.lista_link{
+    margin: 0 3em 2em 0;
+    font-size: 16px;
+    color: var(--cor_fontalt);
+    font-weight: bold;
+}
+
+.lista_link a:hover{
+    color: var(--cor_link);
+}
+
+.rodape_texto{
+    font-size: 14px;
+    color: var(--cor_fontalt);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1em 0;
+}
